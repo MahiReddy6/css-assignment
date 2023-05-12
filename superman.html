@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        width: 900px;
+        height: 400px;
+        background-image: url("/images/supermanFly.jpg");
+        background-repeat: no-repeat;
+        background-size: 900px 400px;
+      }
+      .container::before {
+        content: "";
+        position: absolute;
+        width: 900px;
+        height: 400px;
+        background-color: rgba(10, 10, 44, 0.9);
+        z-index: 56;
+      }
+      .main-content {
+        display: flex;
+        position: absolute;
+        z-index: 57;
+        color: white;
+      }
+      .heading-content {
+        margin: 50px;
+      }
+      p {
+        width: 500px;
+      }
+      .heigh-font {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .low-font {
+        margin-top: 20px;
+        font-size: 23px;
+      }
+      #btn {
+        margin-top: 80px;
+        background: rgb(235, 56, 59);
+        color: white;
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .image-stand,
+      img {
+        width: 220px;
+        height: 350px;
+        margin: 20px 0 0 18px;
+      }
+      #btn:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <div class="image-stand">
+          <img src="/images/superman-stand.png" alt="superman-stand" />
+        </div>
+        <div class="heading-content">
+          <p class="heigh-font">The SuperMan</p>
+          <p class="low-font">
+            An alien orphan is sent from his dying planet to Earth, where he
+            grows up to become his adoptive homes first and greatest superhero.
+          </p>
+          <button id="btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
